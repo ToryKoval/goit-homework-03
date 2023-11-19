@@ -98,9 +98,12 @@ body {
 
 .menu {
     display: flex;
-    column-gap: 40px;
+    margin-right: 40px;
+    gap: 40px;
 }
-
+.menu-item:last-child {
+    margin-right: 0px;
+}
 .menu-link {
     display: block;
     color: #2e2f42;
@@ -148,6 +151,13 @@ body {
     display: flex;
     column-gap: 40px;
 }
+.contacts-item {
+    margin-right: 40px;
+}
+
+.contacts-item:last-child {
+    margin-right: 0px;
+}
 
 /* Main */
 
@@ -182,7 +192,13 @@ body {
     padding: 16px 32px;
     cursor: pointer;
     margin: auto;
-}
+    min-width: 169px;
+    height:56px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 4px;
+    };
+
 
 .button:hover,
 .button:focus {
@@ -191,9 +207,18 @@ body {
 
 /* Section Features */
 
-#features-name {
-    display: none;
+.features-section {
+    padding: 120px 0;
 }
+
+.features-item {
+    margin-right: 24px;
+    flex-basis: calc((100% - 3 * 24px) / 4);
+}
+.features-item:last-child {
+    margin-right: 0;
+}
+
 .features-list {
     display: flex;
     align-items: flex-start;
@@ -215,6 +240,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 /* Section Team */
@@ -240,6 +266,9 @@ body {
     gap: 24px;
 }
 
+.name-container {
+    padding: 32px 0 32px;
+}
 .name-title {
     color: #2E2F42;
     font-size: 20px;
@@ -284,7 +313,6 @@ padding-bottom: 120px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    text-transform: capitalize;
     margin-bottom: 72px;
 }
 
@@ -297,21 +325,25 @@ padding-bottom: 120px;
     
 }
 .portfolio-item {
-    border-top: none;
     margin-bottom: 8px;
-    padding-left: 0;
-    width: calc((100%-48px)/3);
+    width: calc((100% - 48px) / 3);
+}
+
+.app-name {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .portfolio-card-title {
     padding: 32px 16px;
-    border: 1px solid var(--CORNFLOWER, #E7E9FC);
     border-top: none;
     color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
+    margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -340,6 +372,17 @@ padding: 100px 0;
 }
 
 .logo-footer {
-    color: #F4F4FD;
+    color: #4D5AE5;
     line-height: 1.17;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+.logo-studio-footer {
+    color: #f4f4fd;
 }
