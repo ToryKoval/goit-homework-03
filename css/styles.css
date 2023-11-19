@@ -29,10 +29,10 @@ img {
     margin: -1px;
     border: 0;
     padding: 0;
-    hite-space: nowrap;
+    white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    verflow: hidden;
+    overflow: hidden;
 }
 
 .list {
