@@ -191,6 +191,9 @@ body {
 
 /* Section Features */
 
+#features-name {
+    display: none;
+}
 .features-list {
     display: flex;
     align-items: flex-start;
@@ -291,15 +294,19 @@ padding-bottom: 120px;
     justify-content: center;
     row-gap: 48px;
     column-gap: 24px;
-    width: calc((100%-48px) / 3);
+    
 }
 .portfolio-item {
-    border: 1px solid var(--CORNFLOWER, #e7e9fc);
     border-top: none;
     margin-bottom: 8px;
+    padding-left: 0;
+    width: calc((100%-48px)/3);
 }
 
 .portfolio-card-title {
+    padding: 32px 16px;
+    border: 1px solid var(--CORNFLOWER, #E7E9FC);
+    border-top: none;
     color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
