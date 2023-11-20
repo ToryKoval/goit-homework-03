@@ -213,7 +213,7 @@ body {
 
 .features-item {
     margin-right: 24px;
-    flex-basis: calc((100% - 3 * 24px) / 4);
+    width: calc((100% - 72px) / 4);
 }
 .features-item:last-child {
     margin-right: 0;
@@ -233,6 +233,7 @@ body {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .features-text {
@@ -301,8 +302,7 @@ body {
 /* Portfolio */
 
 .portfolio-section {
-padding-top: 96px;
-padding-bottom: 120px;
+padding: 120px 0 120px 0;
 }
 
 .portfolio-title {
