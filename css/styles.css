@@ -212,7 +212,6 @@ body {
 }
 
 .features-item {
-    margin-right: 24px;
     width: calc((100% - 72px) / 4);
 }
 .features-item:last-child {
@@ -225,6 +224,8 @@ body {
     column-gap: 24px;
     padding-top: 120px;
     padding-bottom: 120px;
+    margin: 0;
+    padding-left: 0;
 }
 
 .features-title {
